@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package com.banking_portal.constants.dto;
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.banking_portal.constants.dto";
+option java_multiple_files = true;
+
+message PaymentEntity{
+  string uid=1;
+  string sender_account_id=2;
+  string receiver_account_id=3;
+  string transactional_note=4;
+  double amount=5;
+}
+

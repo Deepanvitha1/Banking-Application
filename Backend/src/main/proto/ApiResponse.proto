@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package com.banking_portal.constants.api;
+option java_package="com.banking_portal.constants.api";
+option java_multiple_files=true;
+
+import 'google/protobuf/any.proto';
+
+
+message ApiResponseHeader{
+  string status_code=1;
+  string message=2;
+}
+
+// Common API Response
+message ApiResponse {
+  ApiResponseHeader headers = 1;
+  optional google.protobuf.Any data = 2;
+}
+

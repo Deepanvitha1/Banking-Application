@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package com.banking_portal.constants.dto;
+
+option java_package = "com.banking_portal.constants.dto";
+option java_multiple_files = true;
+
+message CreateAccountRequest {
+  string uid=1;
+  string type_of_account=2;
+}
+
+message CreateAccountResponse {
+  string uid=1;
+  string account_id=2;
+  string type_of_account=3;
+  double balance=4;
+}
+
+message Account {
+  string uid=1;
+  string account_id = 2;
+  string type_of_account=3;
+  double balance=4;
+}
+message AccountIdRequestDTO{
+  string uid=1;
+  string type_of_account=2;
+}
+message AccountIdResponseDTO{
+  string account_id=1;
+}

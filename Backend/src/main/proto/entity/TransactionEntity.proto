@@ -1,0 +1,26 @@
+syntax = "proto3";
+package com.banking_portal.constants.dto;
+import "google/protobuf/timestamp.proto";
+
+option java_package = "com.banking_portal.constants.dto";
+option java_multiple_files = true;
+
+
+message TransactionEntity
+{
+  int64 transaction_id=1;
+  string sender_account_id=2;
+  string receiver_account_id=3;
+  string transactional_note=4;
+  double amount=5;
+  google.protobuf.Timestamp created_ts=6;
+  google.protobuf.Timestamp updated_ts=7;
+}
+
+message HistoryList
+{
+  repeated TransactionEntity items=1;
+  string loggedInUserAccountNumber=2;
+  int32 TotalPages = 3;
+  int32 TotalElements = 4;
+}

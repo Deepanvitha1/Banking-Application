@@ -1,0 +1,28 @@
+#CREATE TABLE user (
+#id VARCHAR(16) PRIMARY KEY,
+#first_name VARCHAR(50) NOT NULL,
+#last_name VARCHAR(50) NOT NULL,
+#phone_number VARCHAR(15) NOT NULL,
+#aadhar VARCHAR(12) UNIQUE NOT NULL,
+#address VARCHAR(255) NOT NULL,
+#dob DATE NOT NULL,
+#account_type VARCHAR(20) NOT NULL,
+#password VARCHAR(100) NOT NULL,
+#re_password VARCHAR(100) NOT NULL,
+#created_ts TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+#updated_ts TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+#);
+
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+db:
+  password: vajje@hugo
+  pool-size: 20
+  username: root
+  connection-url: jdbc:mysql://localhost:3306/dbpproject
+
+  app: { jwtSecret: Hugohub, jwtExpirationMs: 3600000 }
+
