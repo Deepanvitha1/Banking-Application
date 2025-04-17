@@ -1,0 +1,77 @@
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  background-color: #e5e7eb;
+}
+
+.logoContainer {
+  margin-bottom: 30px;
+}
+
+.homeLogo {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 3px solid #333;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.buttonContainer {
+  display: flex;
+  gap: 15px;
+}
+
+.homeButton {
+  text-decoration: none;
+  padding: 12px 25px;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.loginButton {
+  background-color: #052034;
+  color: white;
+  border: 2px solid #052034;
+}
+
+.loginButton:hover {
+  background-color: white;
+  color: #052034;
+  border-color: #052034;
+}
+
+.signupButton {
+  background-color: #486281;
+  color: white;
+  border: 2px solid #486281;
+}
+
+.signupButton:hover {
+  background-color: white;
+  color: #486281;
+  border-color: #486281;
+}
+
+@media screen and (max-width: 768px) {
+  .homeLogo {
+    width: 180px;
+    height: 180px;
+  }
+
+  .buttonContainer {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .homeButton {
+    width: 80%;
+    text-align: center;
+  }
+}

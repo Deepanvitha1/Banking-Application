@@ -1,0 +1,111 @@
+body {
+  background-color: #f9f9f9;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.parentDashboard {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.dashboard {
+  width: 100%;
+  max-width: 900px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: #202020;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.accounts-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.accounts-header h2 {
+  font-size: 1.4rem;
+  color: #000000;
+}
+
+.total-balance {
+  font-size: 1.2rem;
+  color: #1c1c1c;
+  font-weight: bold;
+}
+
+.accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.accounts-table th,
+.accounts-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.accounts-table th {
+  background: #486281;
+  color: white;
+  font-weight: bold;
+}
+
+.accounts-table tr:hover {
+  background: #f1f1f1;
+}
+
+.accounts-table td {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+.profile-section {
+  margin-top: 40px;
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.profile-section h2 {
+  font-size: 1.6rem;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-details p {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 10px 0;
+}
+
+.profile-details strong {
+  color: #486281;
+}
